@@ -36,8 +36,9 @@
                 type="spot"
                 intensity="1"
                 color="#ffffff"
-                position="-3.042 2.488 -3.618"
-                rotation="0 -72 0">
+                position="-3.042 2.488 -3.032"
+                rotation="-31.636 -62.959 -11.547"
+                light="castShadow: true;">
             </a-light>
 
             <!-- Camera -->
@@ -78,6 +79,8 @@
                 color="#ffffff"
                 roughness="1"
                 metalness="0"
+                shadow="cast: true;
+                    receive: true;"
                 material="src: textures/Rock/Rock_030_COLOR.jpg;
                     repeat: 2 2;
                     normalMap: textures/Rock/Rock_030_NORM.jpg;
@@ -96,14 +99,15 @@
                 width="4"
                 height="4"
                 color="#ffffff"
-                roughness="0.8"
-                metalness="0.1"
-                material="src: textures/Pebbles/Pebbles_009_Base_Color.jpg;
-                    repeat: 8 8;
-                    normalMap: textures/Pebbles/Pebbles_009_Normal.jpg;
-                    normalTextureRepeat: 8 8;
-                    ambientOcclusionMap: textures/Pebbles/Pebbles_009_Ambient_Occlusion.jpg;
-                    ambientOcclusionTextureRepeat: 8 8;">
+                roughness="0.2"
+                metalness="0.2"
+                shadow="receive: true;"
+                material="src: textures/Black_marble_02/Textures_2K/black_marble_02_2k_baseColor.jpg;
+                    repeat: 4 4;
+                    normalMap: textures/Black_marble_02/Textures_2K/black_marble_02_2k_normal.jpg;
+                    normalTextureRepeat: 4 4;
+                    ambientOcclusionMap: textures/Black_marble_02/Textures_2K/black_marble_02_2k_height.jpg;
+                    ambientOcclusionTextureRepeat: 4 4;">
             </a-plane>
             <a-sky color="#ECECEC"></a-sky>
 
